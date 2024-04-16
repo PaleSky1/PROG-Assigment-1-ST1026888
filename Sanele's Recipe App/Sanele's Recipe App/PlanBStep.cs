@@ -8,5 +8,6 @@ namespace Sanele_s_Recipe_App
 {
     internal class PlanBStep
     {
+        public string Description { get; set; }
     }
 }

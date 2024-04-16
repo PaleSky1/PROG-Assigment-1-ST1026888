@@ -8,5 +8,8 @@ namespace Sanele_s_Recipe_App
 {
     internal class PlanBIngredient
     {
+        public string Name { get; set; }
+        public double Quantity { get; set; }
+        public string Unit { get; set; }
     }
 }
