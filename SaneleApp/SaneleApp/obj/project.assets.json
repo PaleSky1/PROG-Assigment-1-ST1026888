@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\SaneleApp\\SaneleApp\\SaneleApp.csproj",
+      "projectUniqueName": "C:\\Users\\Logan\\Source\\Repos\\PROG-Assigment-1-ST10268888\\SaneleApp\\SaneleApp\\SaneleApp.csproj",
       "projectName": "SaneleApp",
-      "projectPath": "C:\\Users\\Logan\\source\\repos\\SaneleApp\\SaneleApp\\SaneleApp.csproj",
+      "projectPath": "C:\\Users\\Logan\\Source\\Repos\\PROG-Assigment-1-ST10268888\\SaneleApp\\SaneleApp\\SaneleApp.csproj",
       "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Logan\\source\\repos\\SaneleApp\\SaneleApp\\obj\\",
+      "outputPath": "C:\\Users\\Logan\\Source\\Repos\\PROG-Assigment-1-ST10268888\\SaneleApp\\SaneleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Logan\\AppData\\Roaming\\NuGet\\NuGet.Config",

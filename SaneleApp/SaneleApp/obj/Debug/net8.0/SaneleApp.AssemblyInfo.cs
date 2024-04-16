@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SaneleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6ee5dcdc40ac413e1f3ca3236d932afcb74c523")]
 [assembly: System.Reflection.AssemblyProductAttribute("SaneleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SaneleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
