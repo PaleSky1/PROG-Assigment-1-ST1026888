@@ -6,6 +6,7 @@ namespace Sanele_s_Recipe_App
     public partial class MainForm : Form
     {
         private Ingredient[] ingredientsArray = new Ingredient[0];
+        private Step[] stepArray = new Step[0];
         private double multiplyValue = 1;
         public MainForm()
         {
@@ -77,6 +78,8 @@ namespace Sanele_s_Recipe_App
         private void btnConfirmNumberSteps_Click(object sender, EventArgs e)
         {
             int numberOfSteps = (int)StepNumber.Value;
+
+            stepArray = Step.ResizeArray(stepArray, numberOfSteps);
         }
 
         private string[] AddStepToArray(string[] array, string step)
@@ -85,11 +88,11 @@ namespace Sanele_s_Recipe_App
             array[array.Length - 1] = step;
             return array;
         }
-
         private void btnAddStep_Click(object sender, EventArgs e)
         {
-            string step = txtStep.Text;
-            // You can handle steps in a similar manner if needed
+            string stepDescription = txtStep.Text;
+            Step step = new Step(stepDescription);
+            stepArray = Step.AddStepToArray(stepArray, step);
         }
         private void btnHalf_Click(object sender, EventArgs e)
         {
@@ -112,9 +115,41 @@ namespace Sanele_s_Recipe_App
         }
         private void btnCompleteRecipe_Click(object sender, EventArgs e)
         {
-            string message = Ingredient.GetIngredientsMessage(ingredientsArray, multiplyValue);
-            MessageBox.Show(message, "Added Ingredients", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-    //AddRecipePanel (Bottom)
+            string recipeName = txtRecipeName.Text;
+            string recipeDescription = txtDescription.Text;
+
+            string recipeText = $"Recipe: {recipeName}\r\n";
+            recipeText += $"Description: {recipeDescription}\r\n";
+            recipeText += "Ingredients:\r\n";
+            if (ingredientsArray != null)
+            {
+                foreach (Ingredient ingredient in ingredientsArray)
+                {
+                    if (ingredient != null)
+                    {
+                        if (ingredient.IngredientName != null && ingredient.IngredientAmount != null && ingredient.Measurement != null)
+                        {
+                            string ingredientLine = string ingredientLine = $"- {ingredient.IngredientName}: {ingredient.IngredientAmount} {ingredient.Measurement}\r\n"; 
+                            recipeText += ingredientLine;
+                        }
+                    }
+                }
+            }
+            if (stepArray != null)
+            {
+                int stepNumber = 1;
+                recipeText += "Steps:\r\n";
+                foreach (Step step in stepArray)
+                {
+                    if (step != null && step.Description != null)
+                    {
+                        recipeText += ($"Step {stepNumber}: {step.Description}\r\n");
+                        stepNumber++;
+                    }
+                }
+            }
+            txtRecipe2.Text = recipeText;
+        }System.NullReferenceException: 'Object reference not set to an instance of an object.'
+        //AddRecipePanel (Bottom)
     }
 }

@@ -32,20 +32,5 @@ namespace Sanele_s_Recipe_App
             return array;
         }
 
-        public static string GetIngredientsMessage(Ingredient[] ingredients, double multiplyValue)
-        {
-            StringBuilder message = new StringBuilder();
-            message.AppendLine("Ingredients Added:");
-
-            foreach (Ingredient ingredient in ingredients)
-            {
-                if (ingredient != null)
-                {
-                    double adjustedAmount = ingredient.IngredientAmount * multiplyValue;
-                    message.AppendLine($"- {ingredient.IngredientName}: {adjustedAmount} {ingredient.Measurement}");
-                }
-            }
-            return message.ToString();
-        }
     }
 }

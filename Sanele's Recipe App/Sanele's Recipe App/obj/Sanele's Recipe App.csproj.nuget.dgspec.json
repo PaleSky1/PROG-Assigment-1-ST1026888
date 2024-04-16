@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Logan\\Source\\Repos\\VCNMB-PROG6221-2024-POE--PaleSky1\\Sanele's Recipe App\\Sanele's Recipe App\\Sanele's Recipe App.csproj": {}
+    "C:\\Users\\Logan\\Source\\Repos\\PROG-Assigment-1-ST1026888\\Sanele's Recipe App\\Sanele's Recipe App\\Sanele's Recipe App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Logan\\Source\\Repos\\VCNMB-PROG6221-2024-POE--PaleSky1\\Sanele's Recipe App\\Sanele's Recipe App\\Sanele's Recipe App.csproj": {
+    "C:\\Users\\Logan\\Source\\Repos\\PROG-Assigment-1-ST1026888\\Sanele's Recipe App\\Sanele's Recipe App\\Sanele's Recipe App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Logan\\Source\\Repos\\VCNMB-PROG6221-2024-POE--PaleSky1\\Sanele's Recipe App\\Sanele's Recipe App\\Sanele's Recipe App.csproj",
+        "projectUniqueName": "C:\\Users\\Logan\\Source\\Repos\\PROG-Assigment-1-ST1026888\\Sanele's Recipe App\\Sanele's Recipe App\\Sanele's Recipe App.csproj",
         "projectName": "Sanele's Recipe App",
-        "projectPath": "C:\\Users\\Logan\\Source\\Repos\\VCNMB-PROG6221-2024-POE--PaleSky1\\Sanele's Recipe App\\Sanele's Recipe App\\Sanele's Recipe App.csproj",
+        "projectPath": "C:\\Users\\Logan\\Source\\Repos\\PROG-Assigment-1-ST1026888\\Sanele's Recipe App\\Sanele's Recipe App\\Sanele's Recipe App.csproj",
         "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Logan\\Source\\Repos\\VCNMB-PROG6221-2024-POE--PaleSky1\\Sanele's Recipe App\\Sanele's Recipe App\\obj\\",
+        "outputPath": "C:\\Users\\Logan\\Source\\Repos\\PROG-Assigment-1-ST1026888\\Sanele's Recipe App\\Sanele's Recipe App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Logan\\AppData\\Roaming\\NuGet\\NuGet.Config",
