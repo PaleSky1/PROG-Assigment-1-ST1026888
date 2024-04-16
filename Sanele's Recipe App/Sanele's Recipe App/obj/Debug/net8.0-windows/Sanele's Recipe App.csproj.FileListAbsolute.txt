@@ -1,0 +1,34 @@
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\bin\Debug\net8.0-windows\Sanele's Recipe App.exe
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\bin\Debug\net8.0-windows\Sanele's Recipe App.deps.json
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\bin\Debug\net8.0-windows\Sanele's Recipe App.runtimeconfig.json
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\bin\Debug\net8.0-windows\Sanele's Recipe App.dll
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\bin\Debug\net8.0-windows\Sanele's Recipe App.pdb
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele_s_Recipe_App.MainForm.resources
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele_s_Recipe_App.MenuForm.resources
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.csproj.GenerateResource.cache
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.AssemblyInfoInputs.cache
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.AssemblyInfo.cs
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.csproj.CoreCompileInputs.cache
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.dll
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\refint\Sanele's Recipe App.dll
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.pdb
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.genruntimeconfig.cache
+C:\Users\Logan\source\repos\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\ref\Sanele's Recipe App.dll
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\bin\Debug\net8.0-windows\Sanele's Recipe App.exe
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\bin\Debug\net8.0-windows\Sanele's Recipe App.deps.json
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\bin\Debug\net8.0-windows\Sanele's Recipe App.runtimeconfig.json
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\bin\Debug\net8.0-windows\Sanele's Recipe App.dll
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\bin\Debug\net8.0-windows\Sanele's Recipe App.pdb
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele_s_Recipe_App.MainForm.resources
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.csproj.GenerateResource.cache
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.AssemblyInfoInputs.cache
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.AssemblyInfo.cs
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.csproj.CoreCompileInputs.cache
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.sourcelink.json
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.dll
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\refint\Sanele's Recipe App.dll
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.pdb
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\Sanele's Recipe App.genruntimeconfig.cache
+C:\Users\Logan\Source\Repos\VCNMB-PROG6221-2024-POE--PaleSky1\Sanele's Recipe App\Sanele's Recipe App\obj\Debug\net8.0-windows\ref\Sanele's Recipe App.dll
