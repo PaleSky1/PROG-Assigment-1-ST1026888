@@ -1,0 +1,14 @@
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\bin\Debug\net8.0\SaneleApp.exe
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\bin\Debug\net8.0\SaneleApp.deps.json
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\bin\Debug\net8.0\SaneleApp.runtimeconfig.json
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\bin\Debug\net8.0\SaneleApp.dll
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\bin\Debug\net8.0\SaneleApp.pdb
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\obj\Debug\net8.0\SaneleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\obj\Debug\net8.0\SaneleApp.AssemblyInfoInputs.cache
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\obj\Debug\net8.0\SaneleApp.AssemblyInfo.cs
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\obj\Debug\net8.0\SaneleApp.csproj.CoreCompileInputs.cache
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\obj\Debug\net8.0\SaneleApp.dll
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\obj\Debug\net8.0\refint\SaneleApp.dll
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\obj\Debug\net8.0\SaneleApp.pdb
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\obj\Debug\net8.0\SaneleApp.genruntimeconfig.cache
+C:\Users\Logan\source\repos\SaneleApp\SaneleApp\obj\Debug\net8.0\ref\SaneleApp.dll
