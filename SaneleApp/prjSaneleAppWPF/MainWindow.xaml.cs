@@ -24,15 +24,16 @@ namespace prjSaneleAppWPF
 
         private void LoadCategories()
         {
-            // Example categories
             var appetizers = new RecipeCategory { Name = "Appetizers" };
             var mainCourses = new RecipeCategory { Name = "Main Courses" };
             var desserts = new RecipeCategory { Name = "Desserts" };
 
+            //Add categories to the manager
             categoryManager.AddItem(appetizers);
             categoryManager.AddItem(mainCourses);
             categoryManager.AddItem(desserts);
 
+            //Bind categories to the combobox
             comb_Categories.ItemsSource = categoryManager.GetItemsSorted().Select(c => c.Name);
         }
 
@@ -40,10 +41,12 @@ namespace prjSaneleAppWPF
         {
             if (comb_Categories.SelectedItem != null)
             {
+                //Get the category
                 string selectedCategory = comb_Categories.SelectedItem.ToString();
                 var category = categoryManager.Items.FirstOrDefault(c => c.Name == selectedCategory);
                 if (category != null)
                 {
+                    //Bind recipes to the recipe list
                     list_Recipes.ItemsSource = category.Recipes.OrderBy(r => r.Name).ToList();
                 }
             }
@@ -53,11 +56,13 @@ namespace prjSaneleAppWPF
         {
             if (list_Recipes.SelectedItem != null)
             {
+                //Display details of the recipe
                 Recipe selectedRecipe = (Recipe)list_Recipes.SelectedItem;
                 ShowRecipeDetails(selectedRecipe);
             }
         }
 
+        //Show details of the selected recipe
         private void ShowRecipeDetails(Recipe recipe)
         {
             RecipeDetails recipeDetailsWindow = new RecipeDetails(recipe);
@@ -66,12 +71,12 @@ namespace prjSaneleAppWPF
 
         private void btn_AddRecipe_Click(object sender, RoutedEventArgs e)
         {
+            //Open the AddRecipe
             AddRecipe addRecipeWindow = new AddRecipe(categoryManager);
             this.Hide();
             addRecipeWindow.ShowDialog();
             this.Show();
 
-            // Refresh the recipe list
             comb_Categories_SelectionChanged(null, null);
         }
     }

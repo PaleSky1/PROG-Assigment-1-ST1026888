@@ -24,7 +24,6 @@ namespace prjSaneleAppWPF
 
         private void DisplayRecipeDetails(Recipe recipe)
         {
-            // Format and display the recipe details
             txtBlock_Details.Text = $"Recipe Name: {recipe.Name}\n\nIngredients:\n";
             foreach (Ingredient ingredient in recipe.Ingredients)
             {

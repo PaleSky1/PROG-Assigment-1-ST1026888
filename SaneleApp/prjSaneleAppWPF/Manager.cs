@@ -1,61 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
-using NUnit.Framework;
-using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace prjSaneleAppWPF
 {
-    public class ManagerTests
+    public class Manager<T>
     {
-        private Manager<DummyItem> manager;
+        //List to hold items 
+        public List<T> Items { get; private set; }
 
-        [SetUp]
-        public void Setup()
+        //Constructor
+        public Manager()
         {
-            // Initialize a new instance of Manager<DummyItem> before each test
-            manager = new Manager<DummyItem>();
+            Items = new List<T>();
         }
 
-        [Test]
-        public void AddItem_AddsItemToList()
+        //Add Method
+        public void AddItem(T item)
         {
-            // Arrange
-            var item = new DummyItem { Name = "Test Item" };
-
-            // Act
-            manager.AddItem(item);
-
-            // Assert
-            Assert.AreEqual(1, manager.Items.Count);
-            Assert.AreEqual(item, manager.Items[0]);
+            Items.Add(item);
         }
 
-        [Test]
-        public void GetItemsSorted_ReturnsItemsInSortedOrder()
+        //Sort Method
+        public IEnumerable<T> GetItemsSorted()
         {
-            // Arrange
-            var item1 = new DummyItem { Name = "Z" };
-            var item2 = new DummyItem { Name = "A" };
-            var item3 = new DummyItem { Name = "B" };
-
-            manager.AddItem(item1);
-            manager.AddItem(item2);
-            manager.AddItem(item3);
-
-            // Act
-            var sortedItems = manager.GetItemsSorted();
-
-            // Assert
-            Assert.AreEqual(3, sortedItems.Count());
-            Assert.AreEqual("A", sortedItems.ElementAt(0).Name);
-            Assert.AreEqual("B", sortedItems.ElementAt(1).Name);
-            Assert.AreEqual("Z", sortedItems.ElementAt(2).Name);
+            return Items.OrderBy(item => item.GetType().GetProperty("Name").GetValue(item, null));
         }
-    }
-
-    public class DummyItem
-    {
-        public string Name { get; set; }
     }
 }

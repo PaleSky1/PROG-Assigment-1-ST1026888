@@ -5,46 +5,43 @@ namespace UnitTestProject
 {
     public class ManagerTests
     {
-        private Manager<DummyItem> manager;
+        private Manager<Recipe> recipeManager;
 
         [SetUp]
         public void Setup()
         {
-            manager = new Manager<DummyItem>();
+            recipeManager = new Manager<Recipe>();
         }
 
         [Test]
         public void AddItem_AddsItemToList()
         {
-            var item = new DummyItem { Name = "Test Item" };
 
-            manager.AddItem(item);
+            var recipe = new Recipe { Name = "Test Recipe" };
 
-            Assert.AreEqual(1, manager.Items.Count);
-            Assert.AreEqual(item, manager.Items[0]);
+            recipeManager.AddItem(recipe);
+
+            Assert.AreEqual(1, recipeManager.Items.Count);
+            Assert.AreEqual(recipe, recipeManager.Items[0]);
         }
 
         [Test]
         public void GetItemsSorted_ReturnsItemsInSortedOrder()
         {
-            var item1 = new DummyItem { Name = "Z" };
-            var item2 = new DummyItem { Name = "A" };
-            var item3 = new DummyItem { Name = "B" };
+            var recipe1 = new Recipe { Name = "Z" };
+            var recipe2 = new Recipe { Name = "A" };
+            var recipe3 = new Recipe { Name = "B" };
 
-            manager.AddItem(item1);
-            manager.AddItem(item2);
-            manager.AddItem(item3);
+            recipeManager.AddItem(recipe1);
+            recipeManager.AddItem(recipe2);
+            recipeManager.AddItem(recipe3);
 
-            var sortedItems = manager.GetItemsSorted();
+            var sortedItems = recipeManager.GetItemsSorted();
 
-            Assert.AreEqual(3, sortedItems.Count());
-            Assert.AreEqual("A", sortedItems.ElementAt(0).Name);
-            Assert.AreEqual("B", sortedItems.ElementAt(1).Name);
-            Assert.AreEqual("Z", sortedItems.ElementAt(2).Name);
+            Assert.AreEqual(3, sortedItems.Count);
+            Assert.AreEqual("A", sortedItems[0].Name);
+            Assert.AreEqual("B", sortedItems[1].Name);
+            Assert.AreEqual("Z", sortedItems[2].Name);
         }
     }
-
-    public class DummyItem
-    {
-        public string Name { get; set; }
-    }
+}
