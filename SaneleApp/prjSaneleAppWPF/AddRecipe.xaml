@@ -1,0 +1,54 @@
+﻿<Window x:Class="prjSaneleAppWPF.AddRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prjSaneleAppWPF"
+        mc:Ignorable="d"
+        Title="AddRecipe" Height="490" Width="800">
+    <Grid>
+        <Label x:Name="lbl_RecipeName" Content="Recipe Name" HorizontalAlignment="Left" Margin="47,28,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_RecipeName" HorizontalAlignment="Left" Margin="47,54,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_RecipeCategory" Content="Category" HorizontalAlignment="Left" Margin="45,138,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comb_RecipeCategory" HorizontalAlignment="Left" Margin="45,164,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <Label x:Name="lbl_Ingredients" Content="Ingredients" Margin="45,90,647,307" FontSize="20"/>
+        <Label x:Name="lbl_IngredientName" Content="Ingredient Name" HorizontalAlignment="Left" Margin="45,190,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_IngredientName" HorizontalAlignment="Left" Margin="45,216,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_IngredientType" Content="Ingredient Type" HorizontalAlignment="Left" Margin="45,249,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comb_IngredientTypes" HorizontalAlignment="Left" Margin="45,280,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Vegetables"/>
+            <ComboBoxItem Content="Fruits"/>
+            <ComboBoxItem Content="Proteins"/>
+            <ComboBoxItem Content="Dairy"/>
+            <ComboBoxItem Content="Grains"/>
+            <ComboBoxItem Content="Fats"/>
+        </ComboBox>
+        <Label x:Name="lbl_Calories" Content="Calories" HorizontalAlignment="Left" Margin="45,313,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Calories" HorizontalAlignment="Left" Margin="45,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_Measurement" Content="Measurement" HorizontalAlignment="Left" Margin="45,372,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Measurement" HorizontalAlignment="Left" Margin="45,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_Units" Content="Units" HorizontalAlignment="Left" Margin="180,372,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comb_Units" HorizontalAlignment="Left" Margin="180,398,0,0" VerticalAlignment="Top" Width="80">
+            <ComboBoxItem Content="g"/>
+            <ComboBoxItem Content="kg"/>
+            <ComboBoxItem Content="ml"/>
+            <ComboBoxItem Content="l"/>
+            <ComboBoxItem Content="oz"/>
+            <ComboBoxItem Content="lb"/>
+            <ComboBoxItem Content="cup"/>
+            <ComboBoxItem Content="tbsp"/>
+            <ComboBoxItem Content="tsp"/>
+        </ComboBox>
+        <Button x:Name="btn_AddIngredient" Content="Add Ingredient" HorizontalAlignment="Left" Margin="45,438,0,0" VerticalAlignment="Top" Width="120" Click="btn_AddIngredient_Click"/>
+        <Label x:Name="lbl_TotalCalories" Content="Total Calories: 0" HorizontalAlignment="Left" Margin="180,438,0,0" VerticalAlignment="Top"/>
+        <Rectangle Fill="Gray" HorizontalAlignment="Left" Margin="270,0,0,433" Stroke="black" Width="3"/>
+        <Label x:Name="lbl_Steps" Content="Steps" Margin="300,90,100,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="lbl_StepDescription" Content="Step Description" HorizontalAlignment="Left" Margin="300,132,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_StepDescription" HorizontalAlignment="Left" Margin="300,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="60"/>
+        <Label x:Name="lbl_StepTime" Content="Time (minutes)" HorizontalAlignment="Left" Margin="300,222,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_StepTime" HorizontalAlignment="Left" Margin="300,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_AddStep" Content="Add Step" HorizontalAlignment="Left" Margin="300,280,0,0" VerticalAlignment="Top" Width="120" Click="btn_AddStep_Click"/>
+        <Button x:Name="btn_SaveRecipe" Content="Save Recipe" HorizontalAlignment="Left" Margin="344,372,0,0" VerticalAlignment="Top" Width="193" Click="btn_SaveRecipe_Click" Height="48"/>
+    </Grid>
+</Window>

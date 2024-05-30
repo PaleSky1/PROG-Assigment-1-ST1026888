@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaneleApp", "SaneleApp\SaneleApp.csproj", "{F4AAB4AB-0BA1-4E5D-A977-08BECB9AC402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaneleApp", "SaneleApp\SaneleApp.csproj", "{F4AAB4AB-0BA1-4E5D-A977-08BECB9AC402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prjSaneleAppWPF", "prjSaneleAppWPF\prjSaneleAppWPF.csproj", "{046D0A04-3D67-4888-B6EC-80973E636BDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{DC8461DF-8CAD-4739-B8DD-B433A8D9DF2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{F4AAB4AB-0BA1-4E5D-A977-08BECB9AC402}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4AAB4AB-0BA1-4E5D-A977-08BECB9AC402}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4AAB4AB-0BA1-4E5D-A977-08BECB9AC402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046D0A04-3D67-4888-B6EC-80973E636BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046D0A04-3D67-4888-B6EC-80973E636BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046D0A04-3D67-4888-B6EC-80973E636BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046D0A04-3D67-4888-B6EC-80973E636BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8461DF-8CAD-4739-B8DD-B433A8D9DF2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8461DF-8CAD-4739-B8DD-B433A8D9DF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8461DF-8CAD-4739-B8DD-B433A8D9DF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8461DF-8CAD-4739-B8DD-B433A8D9DF2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
