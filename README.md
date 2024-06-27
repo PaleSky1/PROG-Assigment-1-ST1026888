@@ -31,7 +31,7 @@ Updates
 
 Installation
 ------------
-  Clone the repository from GitHub: git clone https://github.com/yourusername/SaneleRecipeApp.git](https://github.com/PaleSky1/PROG-Assigment-1-ST10268888.git
+  Clone the repository from GitHub: git clone: https://github.com/PaleSky1/PROG-Assigment-1-ST10268888.git
 
   Open the project in Visual Studio.
 
