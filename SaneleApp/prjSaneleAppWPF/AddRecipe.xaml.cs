@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace prjSaneleAppWPF
 {
@@ -24,6 +15,7 @@ namespace prjSaneleAppWPF
             InitializeComponent();
             categoryManager = manager;
             currentRecipe = new Recipe();
+            currentRecipe.CaloriesExceeded += OnCaloriesExceeded; // Subscribe to the event
             LoadCategories();
         }
 
@@ -31,17 +23,15 @@ namespace prjSaneleAppWPF
         {
             comb_RecipeCategory.ItemsSource = categoryManager.GetItemsSorted().Select(c => c.Name);
         }
-        //Add an ingredient to the recipe
+
         private void btn_AddIngredient_Click(object sender, RoutedEventArgs e)
         {
-            //Get ingredient details
             string name = txt_IngredientName.Text;
             string type = (comb_IngredientTypes.SelectedItem as ComboBoxItem)?.Content.ToString();
             int calories = int.TryParse(txt_Calories.Text, out int cal) ? cal : 0;
             double measurement = double.TryParse(txt_Measurement.Text, out double meas) ? meas : 0;
             string unit = (comb_Units.SelectedItem as ComboBoxItem)?.Content.ToString();
 
-            // Create Ingredient object
             Ingredient ingredient = new Ingredient
             {
                 Name = name,
@@ -50,19 +40,8 @@ namespace prjSaneleAppWPF
                 Measurement = measurement,
                 Unit = unit
             };
+            currentRecipe.AddIngredient(ingredient);
 
-            //Add the ingredient to the recipe
-            currentRecipe.Ingredients.Add(ingredient);
-
-            //Check if total calories exceed 300
-            int totalCalories = currentRecipe.TotalCalories;
-            if (totalCalories > 300)
-            {
-                CaloriesExceededPopup popup = new CaloriesExceededPopup();
-                popup.ShowDialog();
-            }
-
-            //Updates the total calories
             lbl_TotalCalories.Content = $"Total Calories: {currentRecipe.TotalCalories}";
 
             txt_IngredientName.Clear();
@@ -72,34 +51,32 @@ namespace prjSaneleAppWPF
             comb_Units.SelectedIndex = -1;
         }
 
-        //Add a step to the recipe
+        private void OnCaloriesExceeded(int totalCalories)
+        {
+            CaloriesExceededPopup popup = new CaloriesExceededPopup();
+            popup.ShowDialog();
+        }
+
         private void btn_AddStep_Click(object sender, RoutedEventArgs e)
         {
-            //Get step details
             string description = txt_StepDescription.Text;
             int time = int.TryParse(txt_StepTime.Text, out int stepTime) ? stepTime : 0;
 
-            //Create Step object
             Step step = new Step
             {
                 Description = description,
                 Time = time
             };
-
-            //Add the step to the recipe
             currentRecipe.Steps.Add(step);
 
             txt_StepDescription.Clear();
             txt_StepTime.Clear();
         }
 
-        //Save the recipe
         private void btn_SaveRecipe_Click(object sender, RoutedEventArgs e)
         {
-            //Set the recipe name
             currentRecipe.Name = txt_RecipeName.Text;
 
-            //Get the recipe category
             string selectedCategory = comb_RecipeCategory.SelectedItem?.ToString();
             if (string.IsNullOrEmpty(selectedCategory))
             {
@@ -107,7 +84,6 @@ namespace prjSaneleAppWPF
                 return;
             }
 
-            //Find the category in the manager
             var category = categoryManager.Items.FirstOrDefault(c => c.Name == selectedCategory);
             if (category != null)
             {
