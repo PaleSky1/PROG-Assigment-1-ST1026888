@@ -79,5 +79,46 @@ namespace prjSaneleAppWPF
 
             comb_Categories_SelectionChanged(null, null);
         }
+        private void btn_GenerateChart_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedRecipes = list_Recipes.SelectedItems.Cast<Recipe>().ToList();
+            if (selectedRecipes.Count > 0)
+            {
+                var foodGroupPercentages = CalculateFoodGroupPercentages(selectedRecipes);
+                ShowPieChart(foodGroupPercentages);
+            }
+            else
+            {
+                MessageBox.Show("Please select at least one recipe.");
+            }
+        }
+
+        private Dictionary<string, double> CalculateFoodGroupPercentages(List<Recipe> recipes)
+        {
+            Dictionary<string, double> foodGroupPercentages = new Dictionary<string, double>();
+
+            foreach (var recipe in recipes)
+            {
+                foreach (var ingredient in recipe.Ingredients)
+                {
+                    if (foodGroupPercentages.ContainsKey(ingredient.Type))
+                    {
+                        foodGroupPercentages[ingredient.Type] += ingredient.Calories;
+                    }
+                    else
+                    {
+                        foodGroupPercentages[ingredient.Type] = ingredient.Calories;
+                    }
+                }
+            }
+
+            return foodGroupPercentages;
+        }
+
+        private void ShowPieChart(Dictionary<string, double> foodGroupPercentages)
+        {
+            PieChartWindow pieChartWindow = new PieChartWindow(foodGroupPercentages);
+            pieChartWindow.ShowDialog();
+        }
     }
 }
