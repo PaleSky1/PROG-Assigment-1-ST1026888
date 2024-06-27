@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <ComboBox x:Name="comb_Categories" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="comb_Categories_SelectionChanged"/>
-        <ListView x:Name="list_Recipes" SelectionMode="Extended" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="760" Height="300">
+        <ListView x:Name="list_Recipes" SelectionMode="Extended" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="760" Height="300" SelectionChanged="list_Recipes_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Recipe Name" DisplayMemberBinding="{Binding Name}" Width="200"/>
@@ -20,4 +20,3 @@
         <Button x:Name="btn_GenerateChart" Content="Generate Pie Chart" HorizontalAlignment="Left" Margin="10,382,0,0" VerticalAlignment="Top" Width="200" Click="btn_GenerateChart_Click"/>
     </Grid>
 </Window>
-

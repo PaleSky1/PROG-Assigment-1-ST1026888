@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SaneleApp
-build_property.ProjectDir = C:\Users\Logan\Source\Repos\PROG-Assigment-1-ST10268888\SaneleApp\SaneleApp\
+build_property.ProjectDir = C:\Users\Logan\source\repos\PROG-Assigment-1-ST10268888\SaneleApp\SaneleApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
